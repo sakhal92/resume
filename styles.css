@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    padding: 20px;
+    padding: 1cm; /* 1 cm padding around the body */
 }
 
 .container {
@@ -19,22 +19,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header {
+h1, h2 {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1em;
-    color: #666;
-}
-
-section {
     margin-bottom: 20px;
 }
 
@@ -46,26 +32,43 @@ h2 {
     margin-bottom: 15px;
 }
 
-.entry h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+.entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
 }
 
-.entry p, ul {
-    font-size: 1em;
+.entry h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.entry .date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.entry p {
+    margin: 5px 0;
+}
+
+p {
     margin-bottom: 10px;
 }
 
 ul {
     list-style-type: disc;
     padding-left: 20px;
+    margin-bottom: 20px;
 }
 
-a {
-    color: #3498db;
-    text-decoration: none;
+ul li {
+    margin-bottom: 10px;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Add padding between sections */
+section {
+    margin-bottom: 1em; /* This adds one line of space between sections */
 }
